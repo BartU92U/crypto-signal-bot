@@ -1,0 +1,10 @@
+# Pliki konfiguracyjne zawierające wrażliwe dane
+config.py
+
+# Katalog wirtualnego środowiska
+.venv/
+
+# Pliki cache Pythona
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,25 @@
+# Konfiguracja giełdy
+EXCHANGE_ID = 'binance'
+BINANCE_API_KEY = ''
+BINANCE_SECRET_KEY = ''
+
+# Parametry handlowe (dla sygnałów)
+SYMBOLS = ['BTC/USDC', 'TAO/USDC']  # Zaktualizowana lista par walutowych do analizy
+TIMEFRAME_MACRO = '4h'
+TIMEFRAME_MICRO = '1h'
+
+# Parametry strategii EMA
+EMA_FAST_PERIOD = 50
+EMA_SLOW_PERIOD = 200
+
+# Parametry strategii RSI
+RSI_PERIOD = 14
+RSI_OVERSOLD = 30
+RSI_OVERBOUGHT = 70
+
+# Parametry wolumenu
+VOLUME_MULTIPLIER = 1.5
+
+# Konfiguracja Telegrama
+TELEGRAM_BOT_TOKEN = ''
+TELEGRAM_CHAT_ID = ''
