@@ -2,6 +2,7 @@
     "symbols": [
         "BTC/USDC",
         "TAO/USDC",
-        "ETH/USDC"
+        "ETH/USDC",
+        "SOL/USDC"
     ]
 }

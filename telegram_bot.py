@@ -169,7 +169,7 @@ class TelegramBot:
         report += f"<b>Aktualna cena:</b> {data['current_price']:.4f}\n\n"
         report += "<b>Kluczowe poziomy zniesienia:</b>\n"
         report += f"  - 38.2%: {data['levels']['0.382']:.4f}\n"
-        report += f"  - 50.0%: {data['levels']['0.5']:.4f} 🟡\n"
+        report += f"  - 50.0%: {data['levels']['0.500']:.4f} 🟡\n"
         report += f"  - 61.8%: {data['levels']['0.618']:.4f} 🟡 (Złota Strefa)\n\n"
         report += f"<b>Wniosek:</b> {data['status']}"
         return report
