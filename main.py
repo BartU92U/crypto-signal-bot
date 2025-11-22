@@ -2,7 +2,8 @@ import asyncio
 import logging
 from exchange_client import ExchangeClient
 from strategy_analyzer import StrategyAnalyzer
-from telegram_bot import TelegramBot, load_symbols
+from telegram_bot import TelegramBot
+from utils import load_symbols
 from config import TIMEFRAME_MACRO, TIMEFRAME_MICRO, TELEGRAM_CHAT_ID
 
 # Ustawienia
@@ -28,8 +29,8 @@ async def analysis_loop(telegram_bot: TelegramBot):
 
             for symbol in current_symbols:
                 logging.info(f"Analizowanie symbolu: {symbol}")
-                df_macro = exchange_client.fetch_ohlcv(symbol, TIMEFRAME_MACRO, limit=205)
-                df_micro = exchange_client.fetch_ohlcv(symbol, TIMEFRAME_MICRO, limit=205)
+                df_macro = exchange_client.fetch_ohlcv(symbol, TIMEFRAME_MACRO, limit=300)
+                df_micro = exchange_client.fetch_ohlcv(symbol, TIMEFRAME_MICRO, limit=300)
 
                 if df_macro.empty or df_micro.empty:
                     logging.warning(f"Brak danych dla {symbol}, pomijam.")

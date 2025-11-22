@@ -1,0 +1,24 @@
+/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bart/crypto_signal_bot/telegram_bot.py", line 92, in test_pairs
+    df_micro = self.exchange_client.fetch_ohlcv(symbol, TIMEFRAME_MICRO, limit=3
+00)
+                                                        ^^^^^^^^^^^^^^^
+NameError: name 'TIMEFRAME_MICRO' is not defined. Did you mean: 'TIMEFRAME_MACRO
+'?
+2025-11-22 19:12:27,932 - INFO - Analizowanie symbolu: ETH/USDC
+2025-11-22 19:12:28,224 - INFO - Pomyślnie pobrano 300 świec dla ETH/USDC 4h.
+2025-11-22 19:12:28,502 - INFO - Pomyślnie pobrano 300 świec dla ETH/USDC 1h.
+2025-11-22 19:12:28,511 - WARNING - Brak kolumn BB (szukano BBL_20_2). Dostępne:
+ open, high, low, close, volume, RSI, AVG_VOLUME, BBL_20_2.0_2.0, BBM_20_2.0_2.0
+, BBU_20_2.0_2.0, BBB_20_2.0_2.0, BBP_20_2.0_2.0.
+2025-11-22 19:12:33,030 - INFO - HTTP Request: POST https://api.telegram.org/bot
+8209755352:AAFDqSn4hYeVnBJZSpOKxFDyqWS7FFpm_3k/getUpdates "HTTP/1.1 200 OK"
+2025-11-22 19:12:33,513 - INFO - Pętla analityczna zakończona. Następne uruchomi
+enie za 60 sekund.
+2025-11-22 19:12:43,072 - INFO - HTTP Request: POST https://api.telegram.org/bot
+8209755352:AAFDqSn4hYeVnBJZSpOKxFDyqWS7FFpm_3k/getUpdates "HTTP/1.1 200 OK"
+2025-11-22 19:12:53,109 - INFO - HTTP Request: POST https://api.telegram.org/bot
+8209755352:AAFDqSn4hYeVnBJZSpOKxFDyqWS7FFpm_3k/getUpdates "HTTP/1.1 200 OK"
+
